@@ -1,0 +1,2250 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			music project
+		</title>
+		<link rel="stylesheet" href="./assets/css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+		<link href="https://fonts.cdnfonts.com/css/mariyem" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=DM+Serif+Display:ital@0;1&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Lobster&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+J:ital,wght@0,100..400;1,100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+		    <meta charset="utf-8">
+			<meta name="viewport" content="width=device-width">
+			<meta name="description" content="Filter &amp; sort magical layouts">
+			<meta charset="UTF-8">		
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+		<title>Isotope &#xB7; Filter &amp; sort magical layouts</title>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.0/css/all.min.css" integrity="sha512-ApSLB1Pd3/bZN8fWB/RG9YhN/7bd9Hkf3AGaE2mPfebjrxagjuBtx2GcgdqIlJkUzwylBo61r9Xa9NmgBI0swA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	</head>
+	<body>
+	
+		<button id="scrollToTop" class="scroll-progress" aria-label="Scroll to top">
+		<svg viewBox="0 0 100 100">
+			<circle class="progress-bg" cx="50" cy="50" r="44"></circle>
+			<circle class="progress-bar" cx="50" cy="50" r="44"></circle>
+		</svg>
+		<span class="arrow">↑</span>
+		</button>
+		
+	
+		<div id="music-loader">
+			<div class="music-bars">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<div class="loader-text">LOADING MUSIC...</div>
+		</div>
+		<div class="cursor-dot"><i class="fa-solid fa-music"></i></div>
+		<div class="cursor-outline"></div>
+		<header>
+			<div class="header">
+				<div class="header-outer">
+					<div class="header-inner">
+						<div class="header-logo wow animate__animated animate__fadeInLeft" data-wow-duration="1.2s" data-wow-delay="0.7s">
+							<img src="./assets/images/header-logo.png" alt="header-logo">
+						</div>
+						<div class="header-nav wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+							<ul class="nav-list">
+								<li class="nav-dropdown">
+									<a  href="#">Home</a>
+									<div class="home-dropdown music-mega-menu">
+										<div class="music-menu-inner">
+											<div class="music-menu-column">
+												<a href="#" class="music-menu-item">
+													<span class="menu-icon">
+														<i class="fa-solid fa-headphones"></i>
+													</span>
+													<span>
+														<h3>New Releases</h3>
+														<p>Fresh tracks & latest albums</p>
+													</span>
+												</a>
+												<a href="#" class="music-menu-item">
+													<span class="menu-icon hot">
+														<i class="fa-solid fa-fire" style="color: white;"></i>
+													</span>
+													<span>
+														<h3>Trending Now</h3>
+														<p>What's hot in music</p>
+													</span>
+												</a>
+												<a href="#" class="music-menu-item">
+													<span class="menu-icon">
+														<i class="fa-solid fa-chart-line"></i>
+													</span>
+													<span>
+														<h3>Top Charts</h3>
+														<p>Most played tracks</p>
+													</span>
+												</a>
+												<a href="#" class="music-menu-item">
+													<span class="menu-icon">
+														<i class="fa-solid fa-compact-disc"></i>
+													</span>
+													<span>
+														<h3>Albums</h3>
+														<p>Explore all albums</p>
+													</span>
+												</a>
+											</div>
+											<div class="music-menu-column">
+												<a href="#" class="music-menu-item">
+													<span class="menu-icon artist">
+														<i class="fa-solid fa-microphone" style="color: white;"></i>
+													</span>
+													<span>
+														<h3>Artists</h3>
+														<p>Find your favorite artists</p>
+													</span>
+												</a>
+												<a href="#" class="music-menu-item">
+													<span class="menu-icon">
+														<i class="fa-solid fa-music"></i>
+													</span>
+													<span>
+														<h3>Genres</h3>
+														<p>Pop, Rock, Hip-Hop & more</p>
+													</span>
+												</a>
+												<a href="#" class="music-menu-item">
+													<span class="menu-icon">
+														<i class="fa-solid fa-radio"></i>
+													</span>
+													<span>
+														<h3>Music Radio</h3>
+														<p>Listen to music online</p>
+													</span>
+												</a>
+												<a href="#" class="music-menu-item">
+													<span class="menu-icon">
+														<i class="fa-solid fa-heart"></i>
+													</span>
+													<span>
+														<h3>Playlists</h3>
+														<p>Music made for you</p>
+													</span>
+												</a>
+											</div>
+											<div class="music-featured">
+												<div class="featured-content">
+													<span class="featured-tag">
+														<i class="fa-solid fa-star"></i> FEATURED
+													</span>
+													<h2>Feel The<br><span>Music.</span></h2>
+													<p>
+														Discover new sounds, artists and
+														tracks that match your vibe.
+													</p>
+
+													<a href="#" class="explore-btn">
+														Explore Music
+														<i class="fa-solid fa-arrow-right"></i>
+													</a>
+												</div>
+												<div class="music-bar">
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+													<span></span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+								<li class="nav-dropdown">
+									<a href="#">Pages</a>
+									<ul class="page-dropdown">
+										<li><a href="about.html">About Us</a></li>
+										<li><a href="team.html">Teams</a></li>
+									</ul>
+								</li>
+								<li><a href="discography.html">Discography</a></li>
+								<li><a href="events.html">Events</a></li>
+								<li><a href="blogs.html">Blog</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="extra-nav">
+							<div class="search-btn">
+								<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_453)">
+									<path d="M21.7312 19.5925L15.475 13.5943C16.6868 12.1592 17.4165 10.3355 17.4165 8.34932C17.4165 3.74586 13.5097 0.000160217 8.70822 0.000160217C3.90677 0.000160217 0 3.74582 0 8.34928C0 12.9527 3.90681 16.6984 8.70826 16.6984C10.7799 16.6984 12.682 15.9989 14.1789 14.837L20.4351 20.8352C20.6138 21.0066 20.8484 21.0927 21.0831 21.0927C21.3178 21.0927 21.5525 21.0066 21.7312 20.8352C22.0896 20.4916 22.0896 19.9361 21.7312 19.5925ZM8.70826 14.9407C4.91695 14.9407 1.83333 11.9842 1.83333 8.34928C1.83333 4.71431 4.91695 1.75785 8.70826 1.75785C12.4996 1.75785 15.5832 4.71431 15.5832 8.34928C15.5832 11.9842 12.4995 14.9407 8.70826 14.9407Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_453">
+									<rect width="22" height="21.0928" fill="white"/>
+									</clipPath>
+									</defs>
+								</svg></a>
+
+							</div>
+							<div>
+								<button class="toggle-btn" onclick="toggleSidebar()">
+										<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+									<path d="M2.91406 7.29134C2.91406 6.48488 3.5674 5.83301 4.3724 5.83301H23.3307C24.1357 5.83301 24.7891 6.48488 24.7891 7.29134C24.7891 8.0978 24.1357 8.74967 23.3307 8.74967H4.3724C3.5674 8.74967 2.91406 8.0978 2.91406 7.29134ZM30.6224 16.0413H4.3724C3.5674 16.0413 2.91406 16.6932 2.91406 17.4997C2.91406 18.3061 3.5674 18.958 4.3724 18.958H30.6224C31.4274 18.958 32.0807 18.3061 32.0807 17.4997C32.0807 16.6932 31.4274 16.0413 30.6224 16.0413ZM17.4974 26.2497H4.3724C3.5674 26.2497 2.91406 26.9016 2.91406 27.708C2.91406 28.5145 3.5674 29.1663 4.3724 29.1663H17.4974C18.3024 29.1663 18.9557 28.5145 18.9557 27.708C18.9557 26.9016 18.3024 26.2497 17.4974 26.2497Z" fill="white"/>
+									</svg>
+								</button>
+								
+														
+									<div class="blob"></div>
+									<div  id="sidebar-inner" class="sidebar-inner">
+										<div class="logo">
+											<div class="circle"></div>
+											<span>MusicX</span>
+											<button class="close-btn" onclick="toggleSidebar()">
+												<i class="fa-solid fa-x"></i>
+											</button>
+										</div>
+										<div class="menu">
+											<li><a href ="#banner" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+											<li><a href ="#release-wrapper"><i class="fa-solid fa-compass"></i>Discover</a></li>
+											<li><a href ="#time-wrapper"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+											<li><a href ="#calender-wrapper"><i class="fa-solid fa-heart"></i>Favorite</a></li>
+											<li><a href ="#musician-wrapper"><i class="fa-solid fa-music"></i>Playlists</a></li>
+											<li><a href ="#event-wrapper"><i class="fa-solid fa-microphone"></i>Artists</a></li>
+											<li><a href ="#upcoming-wrapper"><i class="fa-solid fa-compact-disc"></i>Albums</a></li>
+											<li><a href ="#post-wrapper"><i class="fa-solid fa-music"></i>Post</a></li>
+											<li><a href ="#footer"><i class="fa-solid fa-compass"></i>Contact</a></li>
+										</div>
+										<div class="premium">
+											<h3>Premium</h3>
+											<p>Unlimited Music Experience</p>
+											<button> <a href="#">Upgrade</a></button>
+										</div>
+									</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="banner " id="banner">
+			<div class="video-pop" id="pop-up">
+			  <div class="pop-bg">
+				<div class="pop-container">
+				  <a class="close" href="#">&times;</a>
+				  <iframe width="560" height="315" src="./assets/images/header.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			  </div>
+			</div>
+			<div class="container">
+				<div class="banner-inner">
+					<p class="scroll"><span></span>scroll</p>
+					<p class="follow"><span></span> Fb.  /  Be.  /  yt.</p>
+					<p class="follow-2"> Follow Us</p>
+					<div class="video-tag video-box wow animate__animated animate__fadeInRight" data-wow-duration="1s" data-wow-delay="0.9s">
+						<svg class="banner-svg "width="495" height="244" viewBox="0 0 495 244" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g opacity="0.6">
+						<rect width="2" height="2" fill="#919191"/>
+						<rect x="17" width="2" height="2" fill="#919191"/>
+						<rect x="34" width="2" height="2" fill="#919191"/>
+						<rect x="51" width="2" height="2" fill="#919191"/>
+						<rect x="68" width="2" height="2" fill="#919191"/>
+						<rect x="85" width="2" height="2" fill="#919191"/>
+						<rect x="102" width="2" height="2" fill="#919191"/>
+						<rect x="119" width="2" height="2" fill="#919191"/>
+						<rect x="136" width="2" height="2" fill="#919191"/>
+						<rect x="153" width="2" height="2" fill="#919191"/>
+						<rect x="170" width="2" height="2" fill="#919191"/>
+						<rect x="187" width="2" height="2" fill="#919191"/>
+						<rect x="204" width="2" height="2" fill="#919191"/>
+						<rect x="221" width="2" height="2" fill="#919191"/>
+						<rect x="238" width="2" height="2" fill="#919191"/>
+						<rect x="255" width="2" height="2" fill="#919191"/>
+						<rect x="272" width="2" height="2" fill="#919191"/>
+						<rect x="289" width="2" height="2" fill="#919191"/>
+						<rect x="306" width="2" height="2" fill="#919191"/>
+						<rect x="323" width="2" height="2" fill="#919191"/>
+						<rect x="340" width="2" height="2" fill="#919191"/>
+						<rect x="357" width="2" height="2" fill="#919191"/>
+						<rect x="374" width="2" height="2" fill="#919191"/>
+						<rect x="391" width="2" height="2" fill="#919191"/>
+						<rect x="408" width="2" height="2" fill="#919191"/>
+						<rect x="425" width="2" height="2" fill="#919191"/>
+						<rect x="442" width="2" height="2" fill="#919191"/>
+						<rect x="459" width="2" height="2" fill="#919191"/>
+						<rect x="476" width="2" height="2" fill="#919191"/>
+						<rect x="493" width="2" height="2" fill="#919191"/>
+						<rect y="22" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="22" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="22" width="2" height="2" fill="#919191"/>
+						<rect y="44" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="44" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="44" width="2" height="2" fill="#919191"/>
+						<rect y="66" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="66" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="66" width="2" height="2" fill="#919191"/>
+						<rect y="88" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="88" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="88" width="2" height="2" fill="#919191"/>
+						<rect y="110" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="110" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="110" width="2" height="2" fill="#919191"/>
+						<rect y="132" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="132" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="132" width="2" height="2" fill="#919191"/>
+						<rect y="154" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="154" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="154" width="2" height="2" fill="#919191"/>
+						<rect y="176" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="176" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="176" width="2" height="2" fill="#919191"/>
+						<rect y="198" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="198" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="198" width="2" height="2" fill="#919191"/>
+						<rect y="220" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="220" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="220" width="2" height="2" fill="#919191"/>
+						<rect y="242" width="2" height="2" fill="#919191"/>
+						<rect x="17" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="34" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="51" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="68" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="85" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="102" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="119" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="136" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="153" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="170" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="187" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="204" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="221" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="238" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="255" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="272" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="289" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="306" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="323" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="340" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="357" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="374" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="391" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="408" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="425" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="442" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="459" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="476" y="242" width="2" height="2" fill="#919191"/>
+						<rect x="493" y="242" width="2" height="2" fill="#919191"/>
+						</g>
+						</svg>
+							
+							<a href="#pop-up">
+								<div class="play-button">
+									<div class="play-icon">
+										<i class="fa-solid fa-play"></i>
+									</div>
+								</div>
+							</a>
+							
+						<!-- <video id="myVideo" width="600" controls muted playsinline style="display: none;"> -->
+							<!-- <source src="./assets/images/header.mp4" type="video/mp4"> -->
+						<!-- </video> -->
+					</div>
+					<p class="header-first-para">Unleash the Rhythm Within . June 23, 2024 </p>
+					<div class="banner-heading wow animate__animated animate__fadeInRight"data-wow-duration="1.5s"data-wow-delay="0.4s">
+						<h1>Discover The Melody Of Music</h1>
+						<p>Velit egestas dui id ornare arcu. Nibh sit amet commodo nulla nullam vehicula. Arcu dictum varius duis at consectetur........</p>
+					</div>
+					<div class="banner-rating ">
+						<div class="rating wow animate__animated animate__fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.9s">
+							<h2>200<span>+</span></h2>
+							<p>Project Completed</p>
+						</div>
+						<div class="rating wow animate__animated animate__fadeInUp" data-wow-duration="1.2s" data-wow-delay="0.9s">
+							<h2>100<span>+</span></h2>
+							<p>Live Concerts</p>
+						</div>
+						<div class="rating-member wow animate__animated animate__zoomIn" data-wow-duration="1.2s" data-wow-delay="1.1s"">
+							<div class="rating-img">
+								<img src="./assets/images/header-img.png" class="img" alt="img">
+								<img src="./assets/images/header-img-2.png" class="img1" alt="img">
+								<img src="./assets/images/header-img-1.png" class="img2" alt="img">
+							</div>
+							<div class="rating-end">
+								<p class="rating-end-para">Happy Customer</p>
+								<p><svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M8.77339 0.578819C9.13179 -0.192913 10.2289 -0.192914 10.5873 0.578818L12.7041 5.13688C12.8498 5.45063 13.1473 5.66679 13.4908 5.70841L18.4799 6.31308C19.3246 6.41546 19.6636 7.4589 19.0404 8.03823L15.3595 11.4599C15.1062 11.6955 14.9925 12.0452 15.0591 12.3847L16.0257 17.3165C16.1894 18.1515 15.3018 18.7964 14.5582 18.3827L10.1665 15.9393C9.86424 15.7712 9.49648 15.7712 9.19418 15.9393L4.80251 18.3827C4.05894 18.7964 3.17134 18.1515 3.335 17.3165L4.30164 12.3847C4.36818 12.0452 4.25454 11.6955 4.00117 11.4599L0.32032 8.03824C-0.30289 7.4589 0.0361441 6.41546 0.880856 6.31308L5.86995 5.70841C6.21337 5.66679 6.51089 5.45063 6.6566 5.13688L8.77339 0.578819Z" fill="#FFC114"/>
+									</svg>
+									<span>4.8(12k Review)</span>
+								</p>
+							</div>
+						</div>
+						
+					</div>
+					<div class="discover-btn wow animate__animated animate__bounceIn"data-wow-duration="1.3s"data-wow-delay="1.3s">
+						<a href="#" >DISCOVER MORE</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<!-- LATEST SECTION START -->
+		
+		<section class="release-wrapper" id="release-wrapper">
+			<div class="container">
+				<div class="latest-inner">
+					<div class="heading-wrapper latest-heading">
+						<div class="latest-left ">
+							<span>Latest Releases</span>
+							<h2>Latest Releases</h2>
+						</div>
+						<div class="latest-right ">
+							<h3 class="common-link"><a href="#">VIEW ALL SOLUTION</a></h3>
+						</div>
+					</div>
+					<div class="latest-album">
+						<div class="ui-group">
+							<div class="filters button-group are-menu-display js-radio-button-group">
+								<ul class="release-table"> 
+									<li ><button  class="a"data-filter="*">Show All <div class="arrow-box"><span></span></div></button></li>
+									<li ><button  class="a"data-filter=".beat"> Beat<div class="arrow-box"><span></span></div></button></li>
+									<li ><button  class="a"data-filter=".rock">Kraut Rock<div class="arrow-box"><span></span></div></button></li>
+									<li ><button  class="a"data-filter=".minimal">Minimal<div class="arrow-box"><span></span></div></button></li>
+									<li ><button  class="a"data-filter=".trap">Trap<div class="arrow-box"><span></span></div></button></li>
+								</ul>
+							</div>
+						</div>
+						<div class="release-right">
+							<div class="grid row">
+								<div class="col-3 element-item metal beat" data-category="beat">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="0.3s" data-wow-delay="0.1s">
+										<img src="./assets/images/rectangle-1.png" alt="img">
+										<h3>Latest Back (Original Mix)</h3>
+										<p>Markus weight</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 rock  element-item metal" data-category="rock">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="0.4s" data-wow-delay="0.2s">
+										<img src="./assets/images/rectangle-2.png" alt="img">
+										<h3>Shape of You (Original Mix)</h3>
+										<p>Ed Sheeran</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 minimal element-item metal" data-category="minimal">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="0.5s" data-wow-delay="0.3s">
+										<img src="./assets/images/rectangle-3.png" alt="img">
+										<h3>Bad Guy (Original Mix)</h3>
+										<p>Billie Eilish</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>								
+								<div class="col-3 element-item trap metal" data-category="trap">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="0.6s" data-wow-delay="0.4s">
+										<img src="./assets/images/rectangle-4.png" alt="img">
+										<h3>Hello (Original Mix)</h3>
+										<p>Adele</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 beat element-item metal" data-category="beat">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="0.7s" data-wow-delay="0.5s">
+										<img src="./assets/images/rectangle-5.png" alt="img">
+										<h3>Latest Back (Original Mix)</h3>
+										<p>Markus weight</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 rock element-item metal" data-category="rock">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="0.8s" data-wow-delay="0.6s">
+										<img src="./assets/images/rectangle-6.png" alt="img">
+										<h3>Shape of You (Original Mix)</h3>
+										<p>Ed Sheeran</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 minimal element-item metal" data-category="minimal">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="0.9s" data-wow-delay="0.7s">
+										<img src="./assets/images/rectangle-7.png" alt="img">
+										<h3>Bad Guy (Original Mix)</h3>
+										<p>Billie Eilish</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 trap element-item metal" data-category="trap">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="1s" data-wow-delay="0.8s">
+										<img src="./assets/images/rectangle-8.png" alt="img">
+										<h3>Hello (Original Mix)</h3>
+										<p>Adele</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 beat element-item metal" data-category="beat">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="1.1s" data-wow-delay="0.9s">
+										<img src="./assets/images/rectangle-9.png" alt="img">
+										<h3>Latest Back (Original Mix)</h3>
+										<p>Markus weight</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 rock element-item metal" data-category="rock">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="1.2s" data-wow-delay="1s">
+										<img src="./assets/images/rectangle-10.png" alt="img">
+										<h3>Shape of You (Original Mix)</h3>
+										<p>Ed Sheeran</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 minimal element-item metal" data-category="minimal">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="1.3s" data-wow-delay="1.1s">
+										<img src="./assets/images/rectangle-11.png" alt="img">
+										<h3>Bad Guy (Original Mix)</h3>
+										<p>Billie Eilish</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+								<div class="col-3 trap element-item metal" data-category="trap">
+									<div class="music-img wow animate__animated animate__zoomIn"  data-wow-duration="1.4s" data-wow-delay="1.2s">
+										<img src="./assets/images/rectangle-12.png" alt="img">
+										<h3>Hello (Original Mix)</h3>
+										<p>Adele</p>
+										<p class="music-para"><span>#Techno</span> Driving / Peak Time</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+		</section>
+		
+		<!-- section latest end -->
+		
+		<section class="time-wrapper" id="time-wrapper">
+			<div class="container"> 
+				<div class="time-inner">
+					<div class="time-head wow animate__animated animate__fadeInRight"  data-wow-duration="1s"data-wow-delay="0.3s">
+						<span>Album Release </span>
+						<h2>The Most Anticipated Album Release of The Decade.</h2>
+					</div>
+					<div class="main-heading wow animate__animated animate__fadeInLeft"  data-wow-duration="1.2s"data-wow-delay="0.5s">
+						
+						<div class="watch"  >
+							<div class="watch-time">
+								<h2 id="days">99</h2>
+								<p>Days</p>
+							</div>
+							<span>:</span>
+							<div class="watch-time" >
+								<h2 id="hours">18</h2>
+								<p>Hours</p>
+							</div>
+							<span>:</span>
+							<div class="watch-time">
+								<h2 id="minutes">29</h2>
+								<p>Minutes</p>
+							</div>
+							<span>:</span>
+							<div class="watch-time" >
+								<h2 id="seconds">41</h2>
+								<p>Seconds</p>
+							</div>
+						</div>
+					</div>
+					<div class="explore-btn wow animate__animated animate__zoomIn"  data-wow-duration="1.2s"data-wow-delay="0.3s">
+						<a href="#">EXPLORE</a>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="calender-wrapper" id="calender-wrapper">
+			<div class="container">
+				<div class="wrapper calender-inner">
+					<div class="heading-wrapper">
+						<div class="calender-head wow animate__animated animate__fadeIn" data-wow-duration="0.3s"data-wow-delay="0.2s" id="calender-wrapper">
+							<span>Calendar</span>
+							<h2>Event Schedule</h2>
+						</div>
+						<div class="second-heading wow animate__animated animate__fadeIn" data-wow-duration="0.5s"data-wow-delay="0.3s" id="calender-wrapper">
+							<p class="common-link"><a href="#">VIEW ALL SCHEDULE</a></p>
+						</div>
+					</div>
+					<div class="tabs">
+						<div role="tablist" aria-label="Programming Languages" class="calender-date wow animate__animated animate__fadeInRight"  data-wow-duration="1s"data-wow-delay="0.3s">
+							<button  role="tab" aria-selected="true" id="js">
+								<div class="date-para">
+									<p>Day#1 - May 01.2024</p>
+								</div>
+							</button>
+							<button  role="tab" aria-selected="false" id="ruby">
+								<div class="date-para">
+									<p>Day#2 - May 02.2024</p>
+								</div>
+							</button>
+							<button  role="tab" aria-selected="false" id="php">
+								<div class="date-para">
+									<p>Day#3 - May 03.2024</p>
+								</div>
+							</button>
+						</div>
+						<div role="tabpanel" aria-labelledby="js">
+							<div  class="tabel-detail wow animate__animated animate__fadeInRight"  data-wow-duration="O.1s"data-wow-delay="0.3s">
+								<div class="time">
+									17:00 - 18:00 pm
+								</div>
+
+								<div class="title">
+									Finding Serenity In Nature
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>Dallas</h4>
+									<span>Black Rock Club</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							
+							<div class="tabel-detail wow animate__animated animate__fadeInLeft"  data-wow-duration="O.2s"data-wow-delay="0.4s">
+								<div class="time">
+									17:00 - 18:00 pm
+								</div>
+
+								<div class="title">
+									The Power Of Movement
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>USA</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInRight"  data-wow-duration="O.3s"data-wow-delay="0.5s">
+								<div class="time">
+									17:00 - 18:00 pm
+								</div>
+
+								<div class="title">
+									The Gastronomic Adventure
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInLeft"  data-wow-duration="O.4s"data-wow-delay="0.6s">
+								<div class="time">
+									17:00 - 18:00 pm
+								</div>
+
+								<div class="title">
+									Evening Of Laughter
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInRight"  data-wow-duration="O.5s"data-wow-delay="0.7s">
+								<div class="time">
+									17:00 - 18:00 pm
+								</div>
+
+								<div class="title">
+									Intimate Music Experience
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+						</div>
+						<div role="tabpanel" aria-labelledby="ruby" hidden >
+							
+							<div class="tabel-detail wow animate__animated animate__fadeInLeft"  data-wow-duration="O.1s"data-wow-delay="0.3s">
+								<div class="time">
+									18:00 - 19:00 pm
+								</div>
+
+								<div class="title">
+									The Power Of Movement
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>USA</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInRight"  data-wow-duration="O.2s"data-wow-delay="0.4s">
+								<div class="time">
+									18:00 - 19:00 pm
+								</div>
+
+								<div class="title">
+									Finding Serenity In Nature
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>Dallas</h4>
+									<span>Black Rock Club</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInLeft"  data-wow-duration="O.3s"data-wow-delay="0.5s">
+								<div class="time">
+									18:00 - 19:00 pm
+								</div>
+
+								<div class="title">
+									Intimate Music Experience
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInLeft"  data-wow-duration="O.4s"data-wow-delay="0.6s">
+								<div class="time">
+									18:00 - 19:00 pm
+								</div>
+
+								<div class="title">
+									The Gastronomic Adventure
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInRight"  data-wow-duration="O.5s"data-wow-delay="0.7s">
+								<div class="time">
+									18:00 - 19:00 pm
+								</div>
+
+								<div class="title">
+									Evening Of Laughter
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							
+						</div>
+						<div role="tabpanel" aria-labelledby="php" hidden >
+							<div class="tabel-detail wow animate__animated animate__fadeInLeft"  data-wow-duration="O.1s"data-wow-delay="0.3s">
+								<div class="time">
+									16:00 - 17:00 pm
+								</div>
+
+								<div class="title">
+									Finding Serenity In Nature
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>Dallas</h4>
+									<span>Black Rock Club</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInRight"  data-wow-duration="O.2s"data-wow-delay="0.4s">
+								<div class="time">
+									16:00 - 17:00 pm
+								</div>
+
+								<div class="title">
+									The Gastronomic Adventure
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInLeft"  data-wow-duration="O.3s"data-wow-delay="0.5s">
+								<div class="time">
+									16:00 - 17:00 pm
+								</div>
+
+								<div class="title">
+									The Power Of Movement
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>USA</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							
+							<div class="tabel-detail wow animate__animated animate__fadeInRight"  data-wow-duration="O.4s"data-wow-delay="0.6s">
+								<div class="time">
+									16:00 - 17:00 pm
+								</div>
+
+								<div class="title">
+									Intimate Music Experience
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							<div class="tabel-detail wow animate__animated animate__fadeInLeft"  data-wow-duration="O.5s"data-wow-delay="0.7s">
+								<div class="time">
+									16:00 - 17:00 pm
+								</div>
+
+								<div class="title">
+									Evening Of Laughter
+								</div>
+
+								<div class="speaker">
+									<h4>Lother Leaxe</h4>
+									<span>Music Director</span>
+								</div>
+
+								<div class="location">
+									<h4>New York</h4>
+									<span>Musical Merriments</span>
+								</div>
+
+								<div class="arrow">
+									<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.2 1.69995L9.01 2.88995L13.77 7.64995H0L0 9.34995H13.77L9.01 14.11L10.2 15.3L17 8.49995L10.2 1.69995Z" fill="black"/>
+									</svg>
+
+								</div>
+							</div>
+							
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		<!-- MUSICIAN START -->
+		
+		<section class="musician-wrapper ">
+			<div class="container">
+				<div class="musician-inner">
+					<div class="row row-wrapper ">
+						<div class="musician-heading col-6 wow animate__animated animate__bounceIn" data-wow-duration="1s"data-wow-delay="0.3s" id="musician-wrapper">
+							<span>Team</span>
+							<h2>The Musicians Behind the Melodies</h2>
+						</div>
+						<div class="musician-head col-5 ">
+							<div class="head-right wow animate__animated animate__bounceIn" data-wow-duration="1s"data-wow-delay="0.3s">
+								<div class="upper-right">
+									<p>No More Endlessly Listening To One Person’s  Favorite Songs Over And Over. Hang The DJ Is a Collaborative Playlist That,</p>
+								</div>
+								<div class="lower-right">
+									<p class="common-link"><a href="#">VIEW ALL SCHEDULE</a></p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="swiper team-swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide music-artist wow animate__animated animate__fadeInUp" data-wow-duration="0.1s"data-wow-delay="0.3s" id="musician-wrapper">
+								<div class="artist-image">
+									<img src="./assets/images/artist.png" alt="img">
+								</div>
+								<div class="artist-detail">
+									<h3>John Doe</h3>
+									<p>Music Artist</p>
+									<div class="share-btn">
+										<a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2633 6.83799C13.8976 7.47834 14.7774 7.875 15.75 7.875C17.683 7.875 19.25 6.308 19.25 4.375C19.25 2.442 17.683 0.875 15.75 0.875C13.817 0.875 12.25 2.442 12.25 4.375C12.25 4.70488 12.2957 5.02412 12.381 5.32671L7.73669 8.037C7.1024 7.39665 6.22253 7 5.25 7C3.317 7 1.75 8.567 1.75 10.5C1.75 12.433 3.317 14 5.25 14C6.22271 14 7.10274 13.6032 7.73706 12.9626L12.382 15.6694C12.296 15.9731 12.25 16.2937 12.25 16.625C12.25 18.558 13.817 20.125 15.75 20.125C17.683 20.125 19.25 18.558 19.25 16.625C19.25 14.692 17.683 13.125 15.75 13.125C14.7789 13.125 13.9002 13.5205 13.2661 14.1592L8.61919 11.4512C8.70441 11.1488 8.75 10.8297 8.75 10.5C8.75 10.1701 8.70436 9.85084 8.61905 9.54826L13.2633 6.83799ZM15.75 2.625C14.7835 2.625 14 3.4085 14 4.375C14 4.67885 14.0774 4.96462 14.2137 5.21363C14.2226 5.22717 14.2312 5.24103 14.2395 5.25522C14.2477 5.26929 14.2555 5.28351 14.2628 5.29784C14.5716 5.79443 15.1222 6.125 15.75 6.125C16.7165 6.125 17.5 5.3415 17.5 4.375C17.5 3.4085 16.7165 2.625 15.75 2.625ZM6.7373 9.57731C6.74461 9.59158 6.75236 9.60575 6.76053 9.61975C6.76876 9.63384 6.77734 9.64766 6.78623 9.66114C6.92252 9.91025 7 10.196 7 10.5C7 10.8039 6.92254 11.0897 6.78629 11.3387C6.77728 11.3524 6.76859 11.3664 6.76025 11.3807C6.75216 11.3946 6.74449 11.4086 6.73725 11.4228C6.42846 11.9193 5.87784 12.25 5.25 12.25C4.2835 12.25 3.5 11.4665 3.5 10.5C3.5 9.53347 4.2835 8.75 5.25 8.75C5.87787 8.75 6.42852 9.08066 6.7373 9.57731ZM14 16.625C14 16.3405 14.0679 16.0718 14.1884 15.8343C14.21 15.806 14.23 15.7759 14.2485 15.7443C14.2662 15.714 14.2818 15.683 14.2955 15.6516C14.6095 15.1833 15.1438 14.875 15.75 14.875C16.7165 14.875 17.5 15.6585 17.5 16.625C17.5 17.5915 16.7165 18.375 15.75 18.375C14.7835 18.375 14 17.5915 14 16.625Z" fill="white"/>
+										</svg></a>
+										<div class="share-media">
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+												<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+												<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+												<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+												<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+												<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+											</svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide music-artist wow animate__animated animate__fadeInUp" data-wow-duration="0.2s"data-wow-delay="0.4s" id="musician-wrapper">
+								<div class="artist-image">
+									<img src="./assets/images/artist-2.png"alt="img">
+								</div>
+								<div class="artist-detail">
+									<h3>Mistine Hoye</h3>
+									<p>Music Artist</p>
+									<div class="share-btn">
+										<a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2633 6.83799C13.8976 7.47834 14.7774 7.875 15.75 7.875C17.683 7.875 19.25 6.308 19.25 4.375C19.25 2.442 17.683 0.875 15.75 0.875C13.817 0.875 12.25 2.442 12.25 4.375C12.25 4.70488 12.2957 5.02412 12.381 5.32671L7.73669 8.037C7.1024 7.39665 6.22253 7 5.25 7C3.317 7 1.75 8.567 1.75 10.5C1.75 12.433 3.317 14 5.25 14C6.22271 14 7.10274 13.6032 7.73706 12.9626L12.382 15.6694C12.296 15.9731 12.25 16.2937 12.25 16.625C12.25 18.558 13.817 20.125 15.75 20.125C17.683 20.125 19.25 18.558 19.25 16.625C19.25 14.692 17.683 13.125 15.75 13.125C14.7789 13.125 13.9002 13.5205 13.2661 14.1592L8.61919 11.4512C8.70441 11.1488 8.75 10.8297 8.75 10.5C8.75 10.1701 8.70436 9.85084 8.61905 9.54826L13.2633 6.83799ZM15.75 2.625C14.7835 2.625 14 3.4085 14 4.375C14 4.67885 14.0774 4.96462 14.2137 5.21363C14.2226 5.22717 14.2312 5.24103 14.2395 5.25522C14.2477 5.26929 14.2555 5.28351 14.2628 5.29784C14.5716 5.79443 15.1222 6.125 15.75 6.125C16.7165 6.125 17.5 5.3415 17.5 4.375C17.5 3.4085 16.7165 2.625 15.75 2.625ZM6.7373 9.57731C6.74461 9.59158 6.75236 9.60575 6.76053 9.61975C6.76876 9.63384 6.77734 9.64766 6.78623 9.66114C6.92252 9.91025 7 10.196 7 10.5C7 10.8039 6.92254 11.0897 6.78629 11.3387C6.77728 11.3524 6.76859 11.3664 6.76025 11.3807C6.75216 11.3946 6.74449 11.4086 6.73725 11.4228C6.42846 11.9193 5.87784 12.25 5.25 12.25C4.2835 12.25 3.5 11.4665 3.5 10.5C3.5 9.53347 4.2835 8.75 5.25 8.75C5.87787 8.75 6.42852 9.08066 6.7373 9.57731ZM14 16.625C14 16.3405 14.0679 16.0718 14.1884 15.8343C14.21 15.806 14.23 15.7759 14.2485 15.7443C14.2662 15.714 14.2818 15.683 14.2955 15.6516C14.6095 15.1833 15.1438 14.875 15.75 14.875C16.7165 14.875 17.5 15.6585 17.5 16.625C17.5 17.5915 16.7165 18.375 15.75 18.375C14.7835 18.375 14 17.5915 14 16.625Z" fill="white"/>
+										</svg></a>
+										<div class="share-media">
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+												<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+												<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+												<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+												<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+												<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+											</svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide music-artist wow animate__animated animate__fadeInUp" data-wow-duration="0.3s"data-wow-delay="0.5s" id="musician-wrapper">
+								<div class="artist-image">
+									<img src="./assets/images/artist-3.png"alt="img">
+								</div>
+								<div class="artist-detail">
+									<h3>Mistine Hoye</h3>
+									<p>Music Artist</p>
+									<div class="share-btn">
+										<a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2633 6.83799C13.8976 7.47834 14.7774 7.875 15.75 7.875C17.683 7.875 19.25 6.308 19.25 4.375C19.25 2.442 17.683 0.875 15.75 0.875C13.817 0.875 12.25 2.442 12.25 4.375C12.25 4.70488 12.2957 5.02412 12.381 5.32671L7.73669 8.037C7.1024 7.39665 6.22253 7 5.25 7C3.317 7 1.75 8.567 1.75 10.5C1.75 12.433 3.317 14 5.25 14C6.22271 14 7.10274 13.6032 7.73706 12.9626L12.382 15.6694C12.296 15.9731 12.25 16.2937 12.25 16.625C12.25 18.558 13.817 20.125 15.75 20.125C17.683 20.125 19.25 18.558 19.25 16.625C19.25 14.692 17.683 13.125 15.75 13.125C14.7789 13.125 13.9002 13.5205 13.2661 14.1592L8.61919 11.4512C8.70441 11.1488 8.75 10.8297 8.75 10.5C8.75 10.1701 8.70436 9.85084 8.61905 9.54826L13.2633 6.83799ZM15.75 2.625C14.7835 2.625 14 3.4085 14 4.375C14 4.67885 14.0774 4.96462 14.2137 5.21363C14.2226 5.22717 14.2312 5.24103 14.2395 5.25522C14.2477 5.26929 14.2555 5.28351 14.2628 5.29784C14.5716 5.79443 15.1222 6.125 15.75 6.125C16.7165 6.125 17.5 5.3415 17.5 4.375C17.5 3.4085 16.7165 2.625 15.75 2.625ZM6.7373 9.57731C6.74461 9.59158 6.75236 9.60575 6.76053 9.61975C6.76876 9.63384 6.77734 9.64766 6.78623 9.66114C6.92252 9.91025 7 10.196 7 10.5C7 10.8039 6.92254 11.0897 6.78629 11.3387C6.77728 11.3524 6.76859 11.3664 6.76025 11.3807C6.75216 11.3946 6.74449 11.4086 6.73725 11.4228C6.42846 11.9193 5.87784 12.25 5.25 12.25C4.2835 12.25 3.5 11.4665 3.5 10.5C3.5 9.53347 4.2835 8.75 5.25 8.75C5.87787 8.75 6.42852 9.08066 6.7373 9.57731ZM14 16.625C14 16.3405 14.0679 16.0718 14.1884 15.8343C14.21 15.806 14.23 15.7759 14.2485 15.7443C14.2662 15.714 14.2818 15.683 14.2955 15.6516C14.6095 15.1833 15.1438 14.875 15.75 14.875C16.7165 14.875 17.5 15.6585 17.5 16.625C17.5 17.5915 16.7165 18.375 15.75 18.375C14.7835 18.375 14 17.5915 14 16.625Z" fill="white"/>
+										</svg></a>
+										<div class="share-media">
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+												<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+												<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+												<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+												<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+												<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+											</svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide music-artist wow animate__animated animate__fadeInUp" data-wow-duration="0.4s"data-wow-delay="0.6s" id="musician-wrapper">
+								<div class="artist-image">
+									<img src="./assets/images/artist-4.png"alt="img">
+								</div>
+								<div class="artist-detail">
+									<h3>Mistine Hoye</h3>
+									<p>Music Artist</p>
+									<div class="share-btn">
+										<a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2633 6.83799C13.8976 7.47834 14.7774 7.875 15.75 7.875C17.683 7.875 19.25 6.308 19.25 4.375C19.25 2.442 17.683 0.875 15.75 0.875C13.817 0.875 12.25 2.442 12.25 4.375C12.25 4.70488 12.2957 5.02412 12.381 5.32671L7.73669 8.037C7.1024 7.39665 6.22253 7 5.25 7C3.317 7 1.75 8.567 1.75 10.5C1.75 12.433 3.317 14 5.25 14C6.22271 14 7.10274 13.6032 7.73706 12.9626L12.382 15.6694C12.296 15.9731 12.25 16.2937 12.25 16.625C12.25 18.558 13.817 20.125 15.75 20.125C17.683 20.125 19.25 18.558 19.25 16.625C19.25 14.692 17.683 13.125 15.75 13.125C14.7789 13.125 13.9002 13.5205 13.2661 14.1592L8.61919 11.4512C8.70441 11.1488 8.75 10.8297 8.75 10.5C8.75 10.1701 8.70436 9.85084 8.61905 9.54826L13.2633 6.83799ZM15.75 2.625C14.7835 2.625 14 3.4085 14 4.375C14 4.67885 14.0774 4.96462 14.2137 5.21363C14.2226 5.22717 14.2312 5.24103 14.2395 5.25522C14.2477 5.26929 14.2555 5.28351 14.2628 5.29784C14.5716 5.79443 15.1222 6.125 15.75 6.125C16.7165 6.125 17.5 5.3415 17.5 4.375C17.5 3.4085 16.7165 2.625 15.75 2.625ZM6.7373 9.57731C6.74461 9.59158 6.75236 9.60575 6.76053 9.61975C6.76876 9.63384 6.77734 9.64766 6.78623 9.66114C6.92252 9.91025 7 10.196 7 10.5C7 10.8039 6.92254 11.0897 6.78629 11.3387C6.77728 11.3524 6.76859 11.3664 6.76025 11.3807C6.75216 11.3946 6.74449 11.4086 6.73725 11.4228C6.42846 11.9193 5.87784 12.25 5.25 12.25C4.2835 12.25 3.5 11.4665 3.5 10.5C3.5 9.53347 4.2835 8.75 5.25 8.75C5.87787 8.75 6.42852 9.08066 6.7373 9.57731ZM14 16.625C14 16.3405 14.0679 16.0718 14.1884 15.8343C14.21 15.806 14.23 15.7759 14.2485 15.7443C14.2662 15.714 14.2818 15.683 14.2955 15.6516C14.6095 15.1833 15.1438 14.875 15.75 14.875C16.7165 14.875 17.5 15.6585 17.5 16.625C17.5 17.5915 16.7165 18.375 15.75 18.375C14.7835 18.375 14 17.5915 14 16.625Z" fill="white"/>
+										</svg></a>
+										<div class="share-media">
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+												<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+												<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+												<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+												<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+												<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+											</svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide music-artist wow animate__animated animate__fadeInUp" data-wow-duration="0.5s"data-wow-delay="0.7s" id="musician-wrapper">
+								<div class="artist-image">
+									<img src="./assets/images/artist.png"alt="img">
+								</div>
+								<div class="artist-detail">
+									<h3>John Doe</h3>
+									<p>Music Artist</p>
+									<div class="share-btn">
+										<a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2633 6.83799C13.8976 7.47834 14.7774 7.875 15.75 7.875C17.683 7.875 19.25 6.308 19.25 4.375C19.25 2.442 17.683 0.875 15.75 0.875C13.817 0.875 12.25 2.442 12.25 4.375C12.25 4.70488 12.2957 5.02412 12.381 5.32671L7.73669 8.037C7.1024 7.39665 6.22253 7 5.25 7C3.317 7 1.75 8.567 1.75 10.5C1.75 12.433 3.317 14 5.25 14C6.22271 14 7.10274 13.6032 7.73706 12.9626L12.382 15.6694C12.296 15.9731 12.25 16.2937 12.25 16.625C12.25 18.558 13.817 20.125 15.75 20.125C17.683 20.125 19.25 18.558 19.25 16.625C19.25 14.692 17.683 13.125 15.75 13.125C14.7789 13.125 13.9002 13.5205 13.2661 14.1592L8.61919 11.4512C8.70441 11.1488 8.75 10.8297 8.75 10.5C8.75 10.1701 8.70436 9.85084 8.61905 9.54826L13.2633 6.83799ZM15.75 2.625C14.7835 2.625 14 3.4085 14 4.375C14 4.67885 14.0774 4.96462 14.2137 5.21363C14.2226 5.22717 14.2312 5.24103 14.2395 5.25522C14.2477 5.26929 14.2555 5.28351 14.2628 5.29784C14.5716 5.79443 15.1222 6.125 15.75 6.125C16.7165 6.125 17.5 5.3415 17.5 4.375C17.5 3.4085 16.7165 2.625 15.75 2.625ZM6.7373 9.57731C6.74461 9.59158 6.75236 9.60575 6.76053 9.61975C6.76876 9.63384 6.77734 9.64766 6.78623 9.66114C6.92252 9.91025 7 10.196 7 10.5C7 10.8039 6.92254 11.0897 6.78629 11.3387C6.77728 11.3524 6.76859 11.3664 6.76025 11.3807C6.75216 11.3946 6.74449 11.4086 6.73725 11.4228C6.42846 11.9193 5.87784 12.25 5.25 12.25C4.2835 12.25 3.5 11.4665 3.5 10.5C3.5 9.53347 4.2835 8.75 5.25 8.75C5.87787 8.75 6.42852 9.08066 6.7373 9.57731ZM14 16.625C14 16.3405 14.0679 16.0718 14.1884 15.8343C14.21 15.806 14.23 15.7759 14.2485 15.7443C14.2662 15.714 14.2818 15.683 14.2955 15.6516C14.6095 15.1833 15.1438 14.875 15.75 14.875C16.7165 14.875 17.5 15.6585 17.5 16.625C17.5 17.5915 16.7165 18.375 15.75 18.375C14.7835 18.375 14 17.5915 14 16.625Z" fill="white"/>
+										</svg></a>
+										<div class="share-media">
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+												<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+												<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+												<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+												<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+												<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+											</svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide music-artist wow animate__animated animate__fadeInUp" data-wow-duration="0.6s"data-wow-delay="0.8s" id="musician-wrapper">
+								<div class="artist-image">
+									<img src="./assets/images/artist-2.png"alt="img">
+								</div>
+								<div class="artist-detail">
+									<h3>Mistine Hoye</h3>
+									<p>Music Artist</p>
+									<div class="share-btn">
+										<a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2633 6.83799C13.8976 7.47834 14.7774 7.875 15.75 7.875C17.683 7.875 19.25 6.308 19.25 4.375C19.25 2.442 17.683 0.875 15.75 0.875C13.817 0.875 12.25 2.442 12.25 4.375C12.25 4.70488 12.2957 5.02412 12.381 5.32671L7.73669 8.037C7.1024 7.39665 6.22253 7 5.25 7C3.317 7 1.75 8.567 1.75 10.5C1.75 12.433 3.317 14 5.25 14C6.22271 14 7.10274 13.6032 7.73706 12.9626L12.382 15.6694C12.296 15.9731 12.25 16.2937 12.25 16.625C12.25 18.558 13.817 20.125 15.75 20.125C17.683 20.125 19.25 18.558 19.25 16.625C19.25 14.692 17.683 13.125 15.75 13.125C14.7789 13.125 13.9002 13.5205 13.2661 14.1592L8.61919 11.4512C8.70441 11.1488 8.75 10.8297 8.75 10.5C8.75 10.1701 8.70436 9.85084 8.61905 9.54826L13.2633 6.83799ZM15.75 2.625C14.7835 2.625 14 3.4085 14 4.375C14 4.67885 14.0774 4.96462 14.2137 5.21363C14.2226 5.22717 14.2312 5.24103 14.2395 5.25522C14.2477 5.26929 14.2555 5.28351 14.2628 5.29784C14.5716 5.79443 15.1222 6.125 15.75 6.125C16.7165 6.125 17.5 5.3415 17.5 4.375C17.5 3.4085 16.7165 2.625 15.75 2.625ZM6.7373 9.57731C6.74461 9.59158 6.75236 9.60575 6.76053 9.61975C6.76876 9.63384 6.77734 9.64766 6.78623 9.66114C6.92252 9.91025 7 10.196 7 10.5C7 10.8039 6.92254 11.0897 6.78629 11.3387C6.77728 11.3524 6.76859 11.3664 6.76025 11.3807C6.75216 11.3946 6.74449 11.4086 6.73725 11.4228C6.42846 11.9193 5.87784 12.25 5.25 12.25C4.2835 12.25 3.5 11.4665 3.5 10.5C3.5 9.53347 4.2835 8.75 5.25 8.75C5.87787 8.75 6.42852 9.08066 6.7373 9.57731ZM14 16.625C14 16.3405 14.0679 16.0718 14.1884 15.8343C14.21 15.806 14.23 15.7759 14.2485 15.7443C14.2662 15.714 14.2818 15.683 14.2955 15.6516C14.6095 15.1833 15.1438 14.875 15.75 14.875C16.7165 14.875 17.5 15.6585 17.5 16.625C17.5 17.5915 16.7165 18.375 15.75 18.375C14.7835 18.375 14 17.5915 14 16.625Z" fill="white"/>
+										</svg></a>
+										<div class="share-media">
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+												<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+												<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+												<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+												<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+												<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+											</svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide music-artist wow animate__animated animate__fadeInUp" data-wow-duration="0.7s"data-wow-delay="0.9s" id="musician-wrapper">
+								<div class="artist-image">
+									<img src="./assets/images/artist-3.png"alt="img">
+								</div>
+								<div class="artist-detail">
+									<h3>Mistine Hoye</h3>
+									<p>Music Artist</p>
+									<div class="share-btn">
+										<a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2633 6.83799C13.8976 7.47834 14.7774 7.875 15.75 7.875C17.683 7.875 19.25 6.308 19.25 4.375C19.25 2.442 17.683 0.875 15.75 0.875C13.817 0.875 12.25 2.442 12.25 4.375C12.25 4.70488 12.2957 5.02412 12.381 5.32671L7.73669 8.037C7.1024 7.39665 6.22253 7 5.25 7C3.317 7 1.75 8.567 1.75 10.5C1.75 12.433 3.317 14 5.25 14C6.22271 14 7.10274 13.6032 7.73706 12.9626L12.382 15.6694C12.296 15.9731 12.25 16.2937 12.25 16.625C12.25 18.558 13.817 20.125 15.75 20.125C17.683 20.125 19.25 18.558 19.25 16.625C19.25 14.692 17.683 13.125 15.75 13.125C14.7789 13.125 13.9002 13.5205 13.2661 14.1592L8.61919 11.4512C8.70441 11.1488 8.75 10.8297 8.75 10.5C8.75 10.1701 8.70436 9.85084 8.61905 9.54826L13.2633 6.83799ZM15.75 2.625C14.7835 2.625 14 3.4085 14 4.375C14 4.67885 14.0774 4.96462 14.2137 5.21363C14.2226 5.22717 14.2312 5.24103 14.2395 5.25522C14.2477 5.26929 14.2555 5.28351 14.2628 5.29784C14.5716 5.79443 15.1222 6.125 15.75 6.125C16.7165 6.125 17.5 5.3415 17.5 4.375C17.5 3.4085 16.7165 2.625 15.75 2.625ZM6.7373 9.57731C6.74461 9.59158 6.75236 9.60575 6.76053 9.61975C6.76876 9.63384 6.77734 9.64766 6.78623 9.66114C6.92252 9.91025 7 10.196 7 10.5C7 10.8039 6.92254 11.0897 6.78629 11.3387C6.77728 11.3524 6.76859 11.3664 6.76025 11.3807C6.75216 11.3946 6.74449 11.4086 6.73725 11.4228C6.42846 11.9193 5.87784 12.25 5.25 12.25C4.2835 12.25 3.5 11.4665 3.5 10.5C3.5 9.53347 4.2835 8.75 5.25 8.75C5.87787 8.75 6.42852 9.08066 6.7373 9.57731ZM14 16.625C14 16.3405 14.0679 16.0718 14.1884 15.8343C14.21 15.806 14.23 15.7759 14.2485 15.7443C14.2662 15.714 14.2818 15.683 14.2955 15.6516C14.6095 15.1833 15.1438 14.875 15.75 14.875C16.7165 14.875 17.5 15.6585 17.5 16.625C17.5 17.5915 16.7165 18.375 15.75 18.375C14.7835 18.375 14 17.5915 14 16.625Z" fill="white"/>
+										</svg></a>
+										<div class="share-media">
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+												<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+												<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+												<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+												<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+												<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+											</svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide music-artist wow animate__animated animate__fadeInUp" data-wow-duration="0.8s"data-wow-delay="1s" id="musician-wrapper">
+								<div class="artist-image">
+									<img src="./assets/images/artist-4.png"alt="img">
+								</div>
+								<div class="artist-detail">
+									<h3>Mistine Hoye</h3>
+									<p>Music Artist</p>
+									<div class="share-btn">
+										<a href="#"><svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M13.2633 6.83799C13.8976 7.47834 14.7774 7.875 15.75 7.875C17.683 7.875 19.25 6.308 19.25 4.375C19.25 2.442 17.683 0.875 15.75 0.875C13.817 0.875 12.25 2.442 12.25 4.375C12.25 4.70488 12.2957 5.02412 12.381 5.32671L7.73669 8.037C7.1024 7.39665 6.22253 7 5.25 7C3.317 7 1.75 8.567 1.75 10.5C1.75 12.433 3.317 14 5.25 14C6.22271 14 7.10274 13.6032 7.73706 12.9626L12.382 15.6694C12.296 15.9731 12.25 16.2937 12.25 16.625C12.25 18.558 13.817 20.125 15.75 20.125C17.683 20.125 19.25 18.558 19.25 16.625C19.25 14.692 17.683 13.125 15.75 13.125C14.7789 13.125 13.9002 13.5205 13.2661 14.1592L8.61919 11.4512C8.70441 11.1488 8.75 10.8297 8.75 10.5C8.75 10.1701 8.70436 9.85084 8.61905 9.54826L13.2633 6.83799ZM15.75 2.625C14.7835 2.625 14 3.4085 14 4.375C14 4.67885 14.0774 4.96462 14.2137 5.21363C14.2226 5.22717 14.2312 5.24103 14.2395 5.25522C14.2477 5.26929 14.2555 5.28351 14.2628 5.29784C14.5716 5.79443 15.1222 6.125 15.75 6.125C16.7165 6.125 17.5 5.3415 17.5 4.375C17.5 3.4085 16.7165 2.625 15.75 2.625ZM6.7373 9.57731C6.74461 9.59158 6.75236 9.60575 6.76053 9.61975C6.76876 9.63384 6.77734 9.64766 6.78623 9.66114C6.92252 9.91025 7 10.196 7 10.5C7 10.8039 6.92254 11.0897 6.78629 11.3387C6.77728 11.3524 6.76859 11.3664 6.76025 11.3807C6.75216 11.3946 6.74449 11.4086 6.73725 11.4228C6.42846 11.9193 5.87784 12.25 5.25 12.25C4.2835 12.25 3.5 11.4665 3.5 10.5C3.5 9.53347 4.2835 8.75 5.25 8.75C5.87787 8.75 6.42852 9.08066 6.7373 9.57731ZM14 16.625C14 16.3405 14.0679 16.0718 14.1884 15.8343C14.21 15.806 14.23 15.7759 14.2485 15.7443C14.2662 15.714 14.2818 15.683 14.2955 15.6516C14.6095 15.1833 15.1438 14.875 15.75 14.875C16.7165 14.875 17.5 15.6585 17.5 16.625C17.5 17.5915 16.7165 18.375 15.75 18.375C14.7835 18.375 14 17.5915 14 16.625Z" fill="white"/>
+										</svg></a>
+										<div class="share-media">
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+												<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+												<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+												<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+												<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+												<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+											</svg></a>
+											<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+											</svg></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+		
+		
+		
+		
+		<section  class="event-wrapper " id="event-wrapper">
+			<div class="container">
+				<div class="event-inner">
+					<div class="row row-wrapper event-head">
+						<div class="heading-left col-7 wow animate__animated animate__fadeInDown" data-wow-duration="1s"data-wow-delay="0.3s">
+							<span>Tickets</span>
+							<h2>Grab Your Tickets for Upcoming Music Events!</h2>
+						</div>
+						<div class="heading-right col-5 wow animate__animated animate__fadeInUp" data-wow-duration="1s"data-wow-delay="0.3s">
+							<p>No More Endlessly Listening To One Person’s Favorite Songs Over And Over. Hang The DJ Is a Collaborative Playlist That,</p>
+							<p class="common-link event-para"><a href="#">VIEW ALL SCHEDULE</a></p>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4">
+						<div class="event-ticket wow animate__animated animate__zoomInLeft" data-wow-duration="0.5s"data-wow-delay="0.3s ">
+							<img src="./assets/images/event-1.png" alt="img">
+							<p class="ticket-present">Your Presents <span class="hr"></span></p>
+							<h3>DAMN TOUR</h3>
+							<h2> Kendrick lamar </h2>
+							<p>Bemovo, Airport Warsaw</p>
+							<span class="hr"></span>
+							<div class="ticket-id">
+								<div class="id-left">
+									<p>Gate: OID</p>
+									<p>Row: 06</p>
+									<p>Seat: 13</p>
+								</div>
+								<div class="id-right">
+									<p>$30</p>
+								</div>
+							</div>
+							
+							<div class="ticket-date">
+								<p>20/12/2024</p>
+								<p>Open Get At 5PM</p>
+							</div>
+							<div class="ticket-qr">
+								<img src="./assets/images/ticket-scaner.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="event-ticket wow animate__animated animate__zoomInLeft" data-wow-duration="0.8s"data-wow-delay="0.5s">
+							<img src="./assets/images/event-2.png" alt="img">
+							<p class="ticket-present">Your Presents <span class="hr"></span></p>
+							<h3>DAMN TOUR</h3>
+							<h2>Kendrick lamar</h2>
+							<p>Bemovo, Airport Warsaw</p>
+							<span class="hr"></span>
+							<div class="ticket-id">
+								<div class="id-left">
+									<p>Gate: OID</p>
+									<p>Row: 06</p>
+									<p>Seat: 13</p>
+								</div>
+								<div class="id-right">
+									<p>$30</p>
+								</div>
+							</div>
+							<div class="ticket-date">
+								<p>20/12/2024</p>
+								<p>Open Get At 5PM</p>
+							</div>
+							<div class="ticket-qr">
+								<img src="./assets/images/ticket-scaner.png" alt="img">
+							</div>
+						</div>
+					</div>
+					<div class="col-4">
+						<div class="event-ticket wow animate__animated animate__zoomInLeft" data-wow-duration="1.1s"data-wow-delay="0.7s">
+							<img src="./assets/images/event-3.png" alt="img">
+							<p class="ticket-present">Your Presents <span class="hr"></span></p>
+							<h3>DAMN TOUR</h3>
+							<h2>Kendrick lamar</h2>
+							<p>Bemovo, Airport Warsaw</p>
+							<span class="hr"></span>
+							<div class="ticket-id">
+								<div class="id-left">
+									<p>Gate: OID</p>
+									<p>Row: 06</p>
+									<p>Seat: 13</p>
+								</div>
+								<div class="id-right">
+									<p>$30</p>
+								</div>
+							</div>
+							<div class="ticket-date">
+								<p>20/12/2024</p>
+								<p>Open Get At 5PM</p>
+							</div>
+							<div class="ticket-qr">
+								<img src="./assets/images/ticket-scaner.png" alt="img">
+							</div>
+						</div>
+					</div>
+				</div>	
+				<!-- <div class="bg-img-1"> -->
+				<!-- <img href="./assets/images/bg-img-1.png"> -->
+				<!-- </div> -->
+				<!-- <div class="bg-img-2"> -->
+				<!-- <img href="./assets/images/bg-img-2.png"> -->
+				<!-- </div> -->
+				<!-- </div> -->
+			</div>
+			
+		</section>
+		<section class="Upcoming-wrapper " id="upcoming-wrapper">
+			<div class="container">
+				<div class="upcoming-inner">
+					<div class="row row-wrapper">
+						<div class="left-head col-6 wow animate__animated animate__fadeInDown" data-wow-duration="0.7s"data-wow-delay="0.3s">
+							<span>Upcoming Tours</span>	
+							<h2>Upcoming Tour Dates of Your Favorite Artists!</h2>
+						</div>
+						<div class="right-head col-5 wow animate__animated animate__fadeInDown" data-wow-duration="0.7s"data-wow-delay="0.3s">
+							<p>No More Endlessly Listening To One Person’s Favorite Songs Over And Over. Hang The DJ Is a Collaborative Playlist That,</p>
+							<p class="common-link upcoming-para"><a href="#">VIEW ALL SCHEDULE</a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="swiper music-swiper">
+					<div class="swiper-wrapper upcoming-template">
+						<div class="swiper-slide  upcoming-swiper wow animate__animated animate__fadeInDown" data-wow-duration="0.1s"data-wow-delay="0.1s">
+							<img src="./assets/images/upcoming.png" alt="img">
+							<div class="upcoming-detail ">
+								<p>December 12, 2024</p>
+								<h3>Intimate Music Experience</h3>
+							</div>
+							<span>01</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInUp" data-wow-duration="0.2s"data-wow-delay="0.2s">
+							<img src="./assets/images/upcoming-2.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>Rock & roll Concert</h3>
+							</div>
+							<span>02</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInDown" data-wow-duration="0.3s"data-wow-delay="0.3s">
+							<img src="./assets/images/upcoming-3.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>The Best Jazz Songs</h3>
+							</div>
+							<span>03</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInUp" data-wow-duration="0.4s"data-wow-delay="0.4s">
+							<img src="./assets/images/upcoming-4.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>The World Of Blues</h3>
+							</div>
+							<span>04</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInDown" data-wow-duration="0.5s"data-wow-delay="0.5s">
+							<img src="./assets/images/upcoming-5.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>Finding Serenity in Nature</h3>
+							</div>
+							<span>05</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInUp" data-wow-duration="0.6s"data-wow-delay="0.6s">
+							<img src="./assets/images/upcoming-6.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>Rock & roll Concert</h3>
+							</div>
+							<span>06</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInDown" data-wow-duration="0.7s"data-wow-delay="0.7s">
+							<img src="./assets/images/upcoming-7.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>the Power of Movement</h3>
+							</div>
+							<span>07</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+							
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInUp" data-wow-duration="0.8s"data-wow-delay="0.8s">
+							<img src="./assets/images/upcoming-8.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>the Gastronomic Adventure</h3>
+							</div>
+							<span>08</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide  upcoming-swiper wow animate__animated animate__fadeInDown" data-wow-duration="0.1s"data-wow-delay="0.1s">
+							<img src="./assets/images/upcoming.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>Intimate Music Experience</h3>
+							</div>
+							<span>01</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInUp" data-wow-duration="0.2s"data-wow-delay="0.2s">
+							<img src="./assets/images/upcoming-2.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>Rock & roll Concert</h3>
+							</div>
+							<span>02</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInDown" data-wow-duration="0.3s"data-wow-delay="0.3s">
+							<img src="./assets/images/upcoming-3.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>The Best Jazz Songs</h3>
+							</div>
+							<span>03</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInUp" data-wow-duration="0.4s"data-wow-delay="0.4s">
+							<img src="./assets/images/upcoming-4.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>The World Of Blues</h3>
+							</div>
+							<span>04</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInDown" data-wow-duration="0.5s"data-wow-delay="0.5s">
+							<img src="./assets/images/upcoming-5.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>Finding Serenity in Nature</h3>
+							</div>
+							<span>05</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInUp" data-wow-duration="0.6s"data-wow-delay="0.6s">
+							<img src="./assets/images/upcoming-6.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>Rock & roll Concert</h3>
+							</div>
+							<span>06</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInDown" data-wow-duration="0.7s"data-wow-delay="0.7s">
+							<img src="./assets/images/upcoming-7.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>the Power of Movement</h3>
+							</div>
+							<span>07</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+							
+						</div>
+						<div class="swiper-slide upcoming-swiper wow animate__animated animate__fadeInUp" data-wow-duration="0.8s"data-wow-delay="0.8s">
+							<img src="./assets/images/upcoming-8.png" alt="img">
+							<div class="upcoming-detail">
+								<p>December 12, 2024</p>
+								<h3>the Gastronomic Adventure</h3>
+							</div>
+							<span>08</span>
+							<div class="upcoming-concert">
+								<p>Concert</p>
+								<a href="#">
+									<svg width="63" height="63" viewBox="0 0 63 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_2002_1624)">
+									<path d="M22.328 16.1053V20.4611L39.7511 20.4611L14.5498 45.6624L17.6611 48.7737L42.8623 23.5724L42.8623 40.9955L47.2181 40.9955V16.1053H22.328Z" fill="white"/>
+									</g>
+									<defs>
+									<clipPath id="clip0_2002_1624">
+									<rect width="44" height="44" fill="white" transform="translate(0 31.1128) rotate(-45)"/>
+									</clipPath>
+									</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<section class="post-wrapper wow animate__animated animate__fadeInUp" data-wow-duration="1s"data-wow-delay="0.3s" id="post-wrapper">
+			<div class="container">
+				<div class="post-inner">
+					<div class="heading-wrapper post-heading">
+						<div class="left-head ">
+							<span>Our Life & Party</span>	
+							<h2>Recent Posts</h2>
+						</div>
+						<div class="right-head">
+							<p class="common-link upcoming-para"><a href="#">VIEW ALL POSTS</a></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-4"> 
+							<div class="post wow animate__animated animate__zoomIn" data-wow-duration="1s" data-wow-delay="0.2s" id="musician-wrapper"">
+								<video class="hover-video" width="400" muted>
+									<source src="./assets/images/video.mp4" type="video/mp4">
+								</video>
+								<p class="post-para">12.11.2022 <span>8 Min Read</span></p>
+								<h3>What Style Are There In Music</h3>
+								<p class="para-2">It is a long established fact that a reader will  by the readable looking at its layout.</p>
+								<div class="post-id">
+									<div>
+										<img src="./assets/images/post-id.png" alt="img">
+									</div>
+									<div>
+										<h3>Isolde Moonbrook</h3>
+										<p>CEO</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4"> 
+							<div class="post wow animate__animated animate__zoomIn" data-wow-duration="1.5s" data-wow-delay="0.4s">
+								<video class="hover-video" width="400" muted>
+									<source src="./assets/images/video-2.mp4" type="video/mp4">
+								</video>
+								<p class="post-para">12.11.2022 <span>8 Min Read</span></p>
+								<h3>Top 10 Cool Young Rock Soloists</h3>
+								<p class="para-2">It is a long established fact that a reader will  by the readable looking at its layout.</p>
+								<div class="post-id">
+									<div>
+										<img src="./assets/images/post-id-1.png" alt="img">
+									</div>
+									<div>
+										<h3>Isolde Moonbrook</h3>
+										<p>Event Orgnizer</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-4"> 
+							<div class="post wow animate__animated animate__zoomIn" data-wow-duration="2s" data-wow-delay="0.6s">
+								<video class="hover-video" width="400" muted>
+									<source src="./assets/images/video-3.mp4" type="video/mp4">
+								</video>
+								<p class="post-para ">12.11.2022 <span>8 Min Read</span></p>
+								<h3>How Do Concerts Affect People?</h3>
+								<p class="para-2">It is a long established fact that a reader will  by the readable looking at its layout.</p>
+								<div class="post-id">
+									<div>
+										<img src="./assets/images/post-id-2.png" alt="img">
+									</div>
+									<div>
+										<h3>Isolde Moonbrook</h3>
+										<p>Director</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+		
+		<footer id="footer" >
+			<div class="container">
+				<div class="footer-inner"> 
+					<div class="row">
+						<div class="col-6">
+							<div class="footer-heading wow animate__animated animate__bounceIn" data-wow-duration="1s"data-wow-delay="0.3s">
+								<img src="./assets/images/header-logo.png" alt="img">
+								<h2>We Develop & Create Music <span>Platforms</span></h2>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="footer-address wow animate__animated animate__bounceIn" data-wow-duration="1.1s"data-wow-delay="0.4s">
+								<h3>Address</h3>
+								<p>	Germany <br>
+									785 15h Street, Office 478<br>
+									Berlin, De 81566	
+								</p>
+								<div class="footer-media wow animate__animated animate__bounceIn" data-wow-duration="1.2s"data-wow-delay="0.5s">
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+									</svg></a>
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+										<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+										<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+										<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+										<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+										<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+									</svg></a>
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+									</svg></a>
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="footer-mail wow animate__animated animate__bounceIn" data-wow-duration="1.3s"data-wow-delay="0.6s">
+								<h3>Say Hello</h3>
+								<p><a href="#">Demo@gmail.com  <hr> +1012 3456 789</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="footer-hr"></span>
+				<div class="footer-end">
+					<ul class="footer-list wow animate__animated animate__bounceIn" data-wow-duration="1.4s"data-wow-delay="0.7s">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Discography</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+					<p>Dexignzone © 2024. All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-- JAWA SCRIPT -->
+		
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+<script src="assets/js/isotope.pkgd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>		
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+<script src="./assets/js/music.js"></script>
+
+
+
+	</body>
+</html>

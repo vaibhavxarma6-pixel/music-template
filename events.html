@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	  <title>Events</title>
+		<link rel="stylesheet" href="./assets/css/style.css">
+	  <link rel="preconnect" href="https://fonts.googleapis.com">
+	  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Pacifico&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+	  <link rel="stylesheet" href="style.css">
+	</head>
+
+	<body>
+		<button id="scrollToTop" class="scroll-progress" aria-label="Scroll to top">
+			<svg viewBox="0 0 100 100">
+				<circle class="progress-bg" cx="50" cy="50" r="44"></circle>
+				<circle class="progress-bar" cx="50" cy="50" r="44"></circle>
+			</svg>
+			<span class="arrow">↑</span>
+		</button>
+			
+		
+		<div id="music-loader">
+			<div class="music-bars">
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+
+			<div class="loader-text">LOADING MUSIC...</div>
+		</div>
+		<div class="cursor-dot"><i class="fa-solid fa-music"></i></div>
+		<div class="cursor-outline"></div>
+		<header class="header">
+				<div class="header">
+					<div class="header-outer">
+						<div class="header-inner">
+							<div class="header-logo wow animate__animated animate__fadeInLeft" data-wow-duration="1.2s" data-wow-delay="0.7s">
+								<img src="./assets/images/header-logo.png" alt="header-logo">
+							</div>
+							<div class="header-nav wow animate__animated animate__fadeInDown" data-wow-duration="1s" data-wow-delay="1s">
+								<ul class="nav-list">
+									<li class="nav-dropdown">
+										<a  href="index.html">Home</a>
+										<div class="home-dropdown music-mega-menu">
+											<div class="music-menu-inner">
+
+												<!-- Discover -->
+												<div class="music-menu-column">
+
+													<a href="#" class="music-menu-item">
+														<span class="menu-icon">
+															<i class="fa-solid fa-headphones"></i>
+														</span>
+														<span>
+															<h3>New Releases</h3>
+															<p>Fresh tracks & latest albums</p>
+														</span>
+													</a>
+
+													<a href="#" class="music-menu-item">
+														<span class="menu-icon hot">
+															<i class="fa-solid fa-fire" style="color: white;"></i>	
+														</span>
+														<span>
+															<h3>Trending Now</h3>
+															<p>What's hot in music</p>
+														</span>
+													</a>
+
+													<a href="#" class="music-menu-item">
+														<span class="menu-icon">
+															<i class="fa-solid fa-chart-line"></i>
+														</span>
+														<span>
+															<h3>Top Charts</h3>
+															<p>Most played tracks</p>
+														</span>
+													</a>
+
+													<a href="#" class="music-menu-item">
+														<span class="menu-icon">
+															<i class="fa-solid fa-compact-disc"></i>
+														</span>
+														<span>
+															<h3>Albums</h3>
+															<p>Explore all albums</p>
+														</span>
+													</a>
+												</div>
+
+
+												<!-- Explore Music -->
+												<div class="music-menu-column">
+
+													<a href="#" class="music-menu-item">
+														<span class="menu-icon artist">
+															<i class="fa-solid fa-microphone" style="color: white;"></i>
+														</span>
+														<span>
+															<h3>Artists</h3>
+															<p>Find your favorite artists</p>
+														</span>
+													</a>
+
+													<a href="#" class="music-menu-item">
+														<span class="menu-icon">
+															<i class="fa-solid fa-music"></i>
+														</span>
+														<span>
+															<h3>Genres</h3>
+															<p>Pop, Rock, Hip-Hop & more</p>
+														</span>
+													</a>
+
+													<a href="#" class="music-menu-item">
+														<span class="menu-icon">
+															<i class="fa-solid fa-radio"></i>
+														</span>
+														<span>
+															<h3>Music Radio</h3>
+															<p>Listen to music online</p>
+														</span>
+													</a>
+
+													<a href="#" class="music-menu-item">
+														<span class="menu-icon">
+															<i class="fa-solid fa-heart"></i>
+														</span>
+														<span>
+															<h3>Playlists</h3>
+															<p>Music made for you</p>
+														</span>
+													</a>
+												</div>
+
+
+												<div class="music-featured">
+
+													<div class="featured-content">
+														<span class="featured-tag">
+															<i class="fa-solid fa-star"></i> FEATURED
+														</span>
+
+														<h2>Feel The<br><span>Music.</span></h2>
+
+														<p>
+															Discover new sounds, artists and
+															tracks that match your vibe.
+														</p>
+
+														<a href="#" class="explore-btn">
+															Explore Music
+															<i class="fa-solid fa-arrow-right"></i>
+														</a>
+													</div>
+
+													<div class="music-bar">
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+														<span></span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</li>
+									<li class="nav-dropdown">
+										<a href="#">Pages</a>
+										<ul class="page-dropdown">
+											<li><a href="about.html">About Us</a></li>
+											<li><a href="team.html">Teams</a></li>
+										</ul>
+									</li>							
+									<li><a href="discography.html">Discography</a></li>
+									<li><a href="events.html">Events</a></li>
+									<li><a href="blogs.html">Blog</a></li>
+									<li><a href="contact.html">Contact Us</a></li>
+								</ul>
+							</div>
+							<div class="extra-nav">
+								<div class="search-btn">
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g clip-path="url(#clip0_2002_453)">
+										<path d="M21.7312 19.5925L15.475 13.5943C16.6868 12.1592 17.4165 10.3355 17.4165 8.34932C17.4165 3.74586 13.5097 0.000160217 8.70822 0.000160217C3.90677 0.000160217 0 3.74582 0 8.34928C0 12.9527 3.90681 16.6984 8.70826 16.6984C10.7799 16.6984 12.682 15.9989 14.1789 14.837L20.4351 20.8352C20.6138 21.0066 20.8484 21.0927 21.0831 21.0927C21.3178 21.0927 21.5525 21.0066 21.7312 20.8352C22.0896 20.4916 22.0896 19.9361 21.7312 19.5925ZM8.70826 14.9407C4.91695 14.9407 1.83333 11.9842 1.83333 8.34928C1.83333 4.71431 4.91695 1.75785 8.70826 1.75785C12.4996 1.75785 15.5832 4.71431 15.5832 8.34928C15.5832 11.9842 12.4995 14.9407 8.70826 14.9407Z" fill="white"/>
+										</g>
+										<defs>
+										<clipPath id="clip0_2002_453">
+										<rect width="22" height="21.0928" fill="white"/>
+										</clipPath>
+										</defs>
+									</svg></a>
+
+								</div>
+								<div>
+									<button class="toggle-btn" onclick="toggleSidebar()">
+											<svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"> 
+										<path d="M2.91406 7.29134C2.91406 6.48488 3.5674 5.83301 4.3724 5.83301H23.3307C24.1357 5.83301 24.7891 6.48488 24.7891 7.29134C24.7891 8.0978 24.1357 8.74967 23.3307 8.74967H4.3724C3.5674 8.74967 2.91406 8.0978 2.91406 7.29134ZM30.6224 16.0413H4.3724C3.5674 16.0413 2.91406 16.6932 2.91406 17.4997C2.91406 18.3061 3.5674 18.958 4.3724 18.958H30.6224C31.4274 18.958 32.0807 18.3061 32.0807 17.4997C32.0807 16.6932 31.4274 16.0413 30.6224 16.0413ZM17.4974 26.2497H4.3724C3.5674 26.2497 2.91406 26.9016 2.91406 27.708C2.91406 28.5145 3.5674 29.1663 4.3724 29.1663H17.4974C18.3024 29.1663 18.9557 28.5145 18.9557 27.708C18.9557 26.9016 18.3024 26.2497 17.4974 26.2497Z" fill="white"/>
+										</svg>
+									</button>					
+									<div class="blob"></div>
+									<div  id="sidebar-inner" class="sidebar-inner">
+										<div class="logo">
+											<div class="circle"></div>
+											<span>MusicX</span>
+											<button class="close-btn" onclick="toggleSidebar()">
+												<i class="fa-solid fa-x"></i>
+											</button>
+										</div>
+										<div class="menu">
+											<li><a href ="#banner" class="active"><i class="fa-solid fa-house"></i>Home</a></li>
+											<li><a href ="#release-wrapper"><i class="fa-solid fa-compass"></i>Discover</a></li>
+											<li><a href ="#time-wrapper"><i class="fa-solid fa-magnifying-glass"></i>Search</a></li>
+											<li><a href ="#calender-wrapper"><i class="fa-solid fa-heart"></i>Favorite</a></li>
+											<li><a href ="#musician-wrapper"><i class="fa-solid fa-music"></i>Playlists</a></li>
+											<li><a href ="#event-wrapper"><i class="fa-solid fa-microphone"></i>Artists</a></li>
+											<li><a href ="#upcoming-wrapper"><i class="fa-solid fa-compact-disc"></i>Albums</a></li>
+											<li><a href ="#post-wrapper"><i class="fa-solid fa-music"></i>Post</a></li>
+											<li><a href ="#footer"><i class="fa-solid fa-compass"></i>Contact</a></li>
+										</div>
+										<div class="premium">
+											<h3>Premium</h3>
+											<p>Unlimited Music Experience</p>
+											<button> <a href="#">Upgrade</a></button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+		</header>
+		<section class="hero contact-banner">
+			<div class="hero-overlay"></div>
+				<div class="hero-content">
+					<h1>Events</h1>
+					<div class="breadcrumb">
+					<span>Home</span>
+					<i class="fa-solid fa-chevron-right"></i>
+					<span>Events</span>
+				</div>
+				</div>
+		</section>
+		<section class="events-section">
+			<div class="section-heading">
+				<div class="heading-left">
+					<div class="script">Recent Events</div>
+					<h2>Melodic Events On<br>The Horizon</h2>
+				</div>
+				<div class="heading-right">
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's</p>
+					<a href="#" class="red-link">VIEW ALL TOUR</a>
+				</div>
+			</div>
+			<div class="event-grid">
+
+				<div class="event-card">
+					<div class="event-image image-one">
+						<div class="date">
+							<p>19</p>
+							<span>JAN</span>
+						</div>
+					</div>
+
+					<div class="event-info">
+						<div class="location">New York, Music Event</div>
+
+						<h3>
+							Wonderland Beats<br>
+							Festival Graham
+						</h3>
+
+						<a href="#" class="read-more">
+						READ MORE <span>→</span>
+						</a>
+					</div>
+				</div>
+
+
+				<div class="event-card">
+					<div class="event-image image-two">
+						<div class="date">
+						<p>15</p>
+						<span>Aug</span>
+						</div>
+					</div>
+					<div class="event-info">
+						<div class="location">New York, Music Event</div>
+						<h3>Achieving Results In<br>Music Events</h3>
+						<a href="#" class="read-more">READ MORE <span>→</span></a>
+					</div>
+				</div>
+
+
+				<div class="event-card">
+					<div class="event-image image-three">
+						<div class="date">
+							<p>21</p>
+							<span>Sep</span>
+						</div>
+					</div>
+
+					<div class="event-info">
+						<div class="location">New York, Music Event</div>
+						<h3>Why Do People Hate Pop<br>Music So Much?</h3>
+						<a href="#" class="read-more">READ MORE <span>→</span></a>
+					</div>
+				</div>
+
+
+				<div class="event-card">
+					<div class="event-image image-four">
+						<div class="date">
+							<p>16</p>
+							<span>JAN</span>
+						</div>
+					</div>
+					<div class="event-info">
+						<div class="location">New York, Music Event</div>
+						<h3>Music's Role In Shaping<br>Our Lives</h3>
+						<a href="#" class="read-more">READ MORE <span>→</span></a>
+					</div>
+				</div>
+
+			</div>
+
+		</section>
+
+		<footer id="footer" >
+			<div class="container">
+				<div class="footer-inner"> 
+					<div class="row">
+						<div class="col-6">
+							<div class="footer-heading wow animate__animated animate__bounceIn" data-wow-duration="1s"data-wow-delay="0.3s">
+								<img src="./assets/images/header-logo.png" alt="img">
+								<h2>We Develop & Create Music <span>Platforms</span></h2>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="footer-address wow animate__animated animate__bounceIn" data-wow-duration="1.1s"data-wow-delay="0.4s">
+								<h3>Address</h3>
+								<p>	Germany <br>
+									785 15h Street, Office 478<br>
+									Berlin, De 81566	
+								</p>
+								<div class="footer-media wow animate__animated animate__bounceIn" data-wow-duration="1.2s"data-wow-delay="0.5s">
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M8.61859 11.7756C8.55459 11.7756 7.14659 11.7756 6.50659 11.7756C6.16526 11.7756 6.05859 11.6476 6.05859 11.3276C6.05859 10.4743 6.05859 9.59963 6.05859 8.7463C6.05859 8.40496 6.18659 8.2983 6.50659 8.2983H8.61859C8.61859 8.2343 8.61859 6.99696 8.61859 6.42096C8.61859 5.56763 8.76793 4.75696 9.19459 4.0103C9.64259 3.2423 10.2826 2.7303 11.0933 2.43163C11.6266 2.23963 12.1599 2.1543 12.7359 2.1543H14.8266C15.1253 2.1543 15.2533 2.2823 15.2533 2.58096V5.01296C15.2533 5.31163 15.1253 5.43963 14.8266 5.43963C14.2506 5.43963 13.6746 5.43963 13.0986 5.46096C12.5226 5.46096 12.2239 5.7383 12.2239 6.33563C12.2026 6.97563 12.2239 7.5943 12.2239 8.25563H14.6986C15.0399 8.25563 15.1679 8.38363 15.1679 8.72496V11.3063C15.1679 11.6476 15.0613 11.7543 14.6986 11.7543C13.9306 11.7543 12.2879 11.7543 12.2239 11.7543V18.709C12.2239 19.0716 12.1173 19.1996 11.7333 19.1996C10.8373 19.1996 9.96259 19.1996 9.06659 19.1996C8.74659 19.1996 8.61859 19.0716 8.61859 18.7516C8.61859 16.5116 8.61859 11.8396 8.61859 11.7756Z" fill="black"/>
+									</svg></a>
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M13.2266 11.4355C14.0586 13.5475 14.6772 15.7235 15.0826 17.9635C15.6586 17.6221 16.1919 17.1955 16.6826 16.7048C17.9626 15.4248 18.7732 13.8248 19.0719 12.0968C17.8132 11.5848 16.4479 11.2861 15.0186 11.2861C14.4212 11.2861 13.8239 11.3288 13.2266 11.4355Z" fill="black"/>
+										<path d="M16.7046 4.65112C16.7046 4.62979 16.7046 4.62979 16.7046 4.65112C15.0833 3.02979 12.9499 2.13379 10.6673 2.13379C9.77127 2.13379 8.8966 2.26179 8.08594 2.53912C9.4086 4.20312 10.5819 5.97379 11.5633 7.82979C13.4406 7.04046 15.1686 5.95246 16.7046 4.65112Z" fill="black"/>
+										<path d="M17.3859 5.39746C15.7646 6.78413 13.9726 7.89346 12.0312 8.72546C12.3086 9.30146 12.5859 9.89879 12.8419 10.4961C13.5672 10.3681 14.2926 10.2828 15.0392 10.2828C16.4686 10.2828 17.8766 10.5388 19.1992 11.0508C19.1992 10.9228 19.1992 10.7948 19.1992 10.6668C19.1992 8.72546 18.5592 6.89079 17.3859 5.39746Z" fill="black"/>
+										<path d="M5.41797 17.3871C6.9113 18.5604 8.74597 19.2004 10.666 19.2004C11.882 19.2004 13.0766 18.9444 14.1646 18.4538C13.7593 16.1071 13.098 13.8244 12.2446 11.6484C9.2153 12.4804 6.7193 14.6138 5.41797 17.3871Z" fill="black"/>
+										<path d="M10.4955 11.2C10.9435 11.008 11.3915 10.8587 11.8395 10.7307C11.6048 10.176 11.3488 9.64271 11.0715 9.10938C8.76748 9.96271 6.33548 10.3894 3.86081 10.3894C3.28481 10.3894 2.70881 10.368 2.13281 10.3254V10.6667C2.13281 12.9494 3.02881 15.0827 4.62881 16.704C5.18348 15.5947 5.90881 14.592 6.80481 13.696C7.87148 12.6294 9.13015 11.776 10.4955 11.2Z" fill="black"/>
+										<path d="M10.6223 8.21352C9.59828 6.33618 8.42495 4.56552 7.08095 2.92285C6.18495 3.34952 5.35295 3.92552 4.62761 4.62952C3.32628 5.93085 2.51561 7.55218 2.23828 9.32285C2.77161 9.36552 3.32628 9.38685 3.85961 9.38685C6.22761 9.38685 8.51028 8.98152 10.6223 8.21352Z" fill="black"/>
+									</svg></a>
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M19.1799 5.37607C18.5399 5.6534 17.8786 5.8454 17.1746 5.93073C17.8999 5.50407 18.4546 4.8214 18.7106 3.9894C18.0279 4.39473 17.2813 4.67207 16.4919 4.84273C15.8519 4.16007 14.9346 3.7334 13.9319 3.7334C11.9906 3.7334 10.4333 5.31207 10.4333 7.23207C10.4333 7.5094 10.4546 7.7654 10.5186 8.0214C7.61728 7.8934 5.05728 6.4854 3.32928 4.3734C2.09195 6.59207 3.47861 8.42673 4.39595 9.0454C3.84128 9.0454 3.28661 8.87473 2.81728 8.61873C2.81728 10.3467 4.03328 11.7761 5.61195 12.0961C5.27061 12.2027 4.50261 12.2667 4.03328 12.1601C4.48128 13.5467 5.78261 14.5707 7.29728 14.5921C6.10261 15.5307 4.35328 16.2774 2.11328 16.0427C3.67061 17.0454 5.50528 17.6214 7.48928 17.6214C13.9319 17.6214 17.4306 12.2881 17.4306 7.68007C17.4306 7.53073 17.4306 7.3814 17.4093 7.23207C18.1346 6.69873 18.7319 6.08007 19.1799 5.37607Z" fill="black"/>
+									</svg></a>
+									<a href="#"><svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<path d="M10.6661 2.13379C5.95148 2.13379 2.13281 5.95246 2.13281 10.6671C2.13281 15.3818 5.95148 19.2005 10.6661 19.2005C15.3808 19.2005 19.1995 15.3818 19.1995 10.6671C19.1995 5.95246 15.3808 2.13379 10.6661 2.13379ZM13.8235 13.8885C13.7381 14.0591 13.5461 14.1445 13.3755 14.1445C13.2901 14.1445 13.2048 14.1231 13.1195 14.0805C11.7755 13.2911 10.1968 13.1631 9.13014 13.1845C7.93548 13.2271 7.06081 13.4618 7.06081 13.4618C6.78348 13.5471 6.50615 13.3765 6.42081 13.0991C6.33548 12.8218 6.50615 12.5445 6.78348 12.4591C6.82614 12.4378 7.76481 12.1818 9.06614 12.1391C9.83414 12.1178 10.5808 12.1605 11.2635 12.2885C12.1381 12.4591 12.9275 12.7578 13.6315 13.1631C13.8661 13.3338 13.9515 13.6325 13.8235 13.8885ZM14.7621 11.9045C14.6555 12.0965 14.4421 12.2031 14.2288 12.2031C14.1221 12.2031 14.0155 12.1818 13.9301 12.1178C12.3301 11.1791 10.4741 11.0298 9.19414 11.0725C7.78614 11.1151 6.74081 11.3925 6.74081 11.3925C6.42081 11.4778 6.07948 11.2858 5.99415 10.9658C5.90881 10.6458 6.10081 10.3045 6.42081 10.2191C6.46348 10.1978 7.57281 9.89912 9.13014 9.85645C10.0475 9.81379 10.9221 9.87779 11.7328 10.0271C12.7781 10.2191 13.7168 10.5605 14.5488 11.0511C14.8475 11.2218 14.9328 11.6058 14.7621 11.9045ZM15.9995 9.70712C15.8501 9.94179 15.6155 10.0698 15.3595 10.0698C15.2315 10.0698 15.1035 10.0271 14.9755 9.96312C11.1568 7.72312 6.20748 9.06712 6.16481 9.06712C5.75948 9.17379 5.35415 8.93912 5.24748 8.53379C5.14081 8.12845 5.37548 7.72312 5.78081 7.61646C5.84481 7.59512 7.21014 7.23245 9.10881 7.16845C10.2181 7.12579 11.3061 7.21112 12.3088 7.40312C13.5888 7.63779 14.7408 8.06445 15.7648 8.66179C16.0848 8.89645 16.2128 9.36579 15.9995 9.70712Z" fill="black"/>
+										</svg>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-3">
+							<div class="footer-mail wow animate__animated animate__bounceIn" data-wow-duration="1.3s"data-wow-delay="0.6s">
+								<h3>Say Hello</h3>
+								<p><a href="#">Demo@gmail.com  <hr> +1012 3456 789</a></p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<span class="footer-hr"></span>
+				<div class="footer-end">
+					<ul class="footer-list wow animate__animated animate__bounceIn" data-wow-duration="1.4s"data-wow-delay="0.7s">
+						<li><a href="#">Home</a></li>
+						<li><a href="#">Pages</a></li>
+						<li><a href="#">Discography</a></li>
+						<li><a href="#">Events</a></li>
+						<li><a href="#">Blog</a></li>
+						<li><a href="#">Contact Us</a></li>
+					</ul>
+					<p>Dexignzone © 2024. All Rights Reserved.</p>
+				</div>
+			</div>
+		</footer>
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"></script>		
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+	<script src="./assets/js/music.js"></script>
+	</body>
+</html>
